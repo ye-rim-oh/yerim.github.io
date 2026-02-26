@@ -1,0 +1,11 @@
+main:
+  - title: "홈"
+    url: /
+  - title: "소개"
+    url: /about/
+  - title: "글"
+    url: /year-archive/
+  - title: "카테고리"
+    url: /categories/
+  - title: "태그"
+    url: /tags/

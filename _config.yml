@@ -1,0 +1,74 @@
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+minimal_mistakes_skin: "contrast"
+
+locale: "ko-KR"
+title: "YERIM LOG"
+title_separator: "|"
+subtitle: "portfolio and notes"
+name: "예림"
+description: "예림의 프로젝트와 기록"
+url: "https://ye-rim-oh.github.io"
+baseurl: ""
+repository: "ye-rim-oh/yerim.github.io"
+timezone: "Asia/Seoul"
+
+logo:
+masthead_title:
+breadcrumbs: false
+search: true
+enable_copy_code_button: true
+
+author:
+  name: "예림"
+  bio: "배우고 만든 것을 기록합니다."
+  location: "Seoul"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ye-rim-oh"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ye-rim-oh"
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:title/
+
+include:
+  - _pages
+
+exclude:
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - Gemfile.lock
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
+      related: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
