@@ -12,7 +12,7 @@ classes: wide
     href="https://drive.google.com/file/d/1rnBmuqR0GI2pk7_abMIpgza2JO9h6SXj/view"
     target="_blank"
     rel="noopener">
-    CV 새 창에서 보기
+    Open CV in New Tab
   </a>
 </p>
 

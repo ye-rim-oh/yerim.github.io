@@ -2,12 +2,12 @@ remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
 minimal_mistakes_skin: "contrast"
 
-locale: "ko-KR"
+locale: "en-US"
 title: "Yerim Oh"
 title_separator: "|"
 subtitle: "notes"
 name: "Yerim Oh"
-description: "메모를 정리하는 공간"
+description: "Notes archive"
 url: "https://ye-rim-oh.github.io"
 baseurl: ""
 repository: "ye-rim-oh/ye-rim-oh.github.io"
@@ -21,7 +21,7 @@ enable_copy_code_button: true
 
 author:
   name: "Yerim Oh"
-  bio: "메모를 기록합니다."
+  bio:
   location: "Seoul, South Korea"
   links:
     - label: "GitHub"
