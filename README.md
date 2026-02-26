@@ -23,10 +23,6 @@
 - 리포 이름이 `yerim.github.io`이면: `https://ye-rim-oh.github.io/yerim.github.io/` (프로젝트 페이지)
 
 ## EN
-
-This repository contains a Jekyll site for GitHub Pages.
-It is set up as a content-focused blog/archive site, with the README documenting the package stack and deployment setup rather than personal profile details.
-
 ### Package stack / setup
 
 - `github-pages` (GitHub Pages build baseline)
