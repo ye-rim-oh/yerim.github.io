@@ -10,7 +10,7 @@ name: "예림"
 description: "예림의 프로젝트와 기록"
 url: "https://ye-rim-oh.github.io"
 baseurl: ""
-repository: "ye-rim-oh/yerim.github.io"
+repository: "ye-rim-oh/ye-rim-oh.github.io"
 timezone: "Asia/Seoul"
 
 logo:
