@@ -3,3 +3,5 @@ main:
     url: /
   - title: "메모"
     url: /notes/
+  - title: "태그"
+    url: /tags/

@@ -1,8 +1,6 @@
 ---
 title: "메모"
 permalink: /notes/
-layout: single
-author_profile: false
+layout: posts
+author_profile: true
 ---
-
-준비중
