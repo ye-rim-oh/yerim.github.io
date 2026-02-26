@@ -13,6 +13,26 @@ GradCafe 정치학 PhD 결과 데이터를 2020년부터 2026년까지 다시 �
 - 원문 리포트(웹에서 보기): [2020-2026 Comprehensive Trend Analysis]({{ '/reports/gradcafe-2020-2026-comprehensive/' | relative_url }})
 - 기반 레포: [ye-rim-oh/GradCafe](https://github.com/ye-rim-oh/GradCafe)
 
+## Interactive Dashboard
+
+<p>
+  <a
+    class="btn btn--primary"
+    href="https://martin-essai.shinyapps.io/gradcafe/"
+    target="_blank"
+    rel="noopener">
+    Open Dashboard in New Tab
+  </a>
+</p>
+
+<iframe
+  src="https://martin-essai.shinyapps.io/gradcafe/"
+  title="GradCafe Shiny Dashboard"
+  width="100%"
+  height="920"
+  style="border: 1px solid #ddd; border-radius: 8px; background: #fff;">
+</iframe>
+
 ## 주의할 점
 
 - 표본은 GradCafe 자발적 게시글이라서 모집단 전체를 대표하지는 않습니다.

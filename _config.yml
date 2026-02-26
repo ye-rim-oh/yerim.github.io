@@ -5,7 +5,7 @@ minimal_mistakes_skin: "contrast"
 locale: "en-US"
 title: "Yerim Oh"
 title_separator: "|"
-subtitle: "notes"
+subtitle:
 name: "Yerim Oh"
 description: "Notes archive"
 url: "https://ye-rim-oh.github.io"
