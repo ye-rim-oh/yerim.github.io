@@ -20,7 +20,7 @@
 
 ### 사이트 주소
 
-- `https://ye-rim-oh.github.io/` (사용자 페이지 리포 `ye-rim-oh.github.io` 기준)
+- `https://ye-rim-oh.github.io/home/`
 
 ## EN
 
@@ -42,4 +42,4 @@
 
 ### Site URL
 
-- `https://ye-rim-oh.github.io/` (assuming the user-page repo name is `ye-rim-oh.github.io`)
+- `https://ye-rim-oh.github.io/home/`

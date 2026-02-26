@@ -9,8 +9,8 @@ subtitle: "portfolio, projects, and notes"
 name: "예림"
 description: "예림의 포트폴리오, 프로젝트 기록, 공부 노트를 정리하는 공간"
 url: "https://ye-rim-oh.github.io"
-baseurl: ""
-repository: "ye-rim-oh/ye-rim-oh.github.io"
+baseurl: "/home"
+repository: "ye-rim-oh/home"
 timezone: "Asia/Seoul"
 
 logo:
