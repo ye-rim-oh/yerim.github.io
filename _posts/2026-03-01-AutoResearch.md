@@ -44,7 +44,7 @@ Westwood가 말을 세게 하긴 했지만, Rex 박사님 말처럼 적절한 �
 ### 후속 논의와 한국 학계
 Sean 교수는 이후에도(특히 블루스카이 쪽 반응을 의식했는지) 후속 트윗을 올렸습니다([후속 1](https://x.com/seanjwestwood/status/2026076268735742443?s=20), [후속 2](https://x.com/seanjwestwood/status/2026852781676528015?s=20)).
 
-한국 학계에서는 대표적으로 디지털 인문학을 주로 하시는 전남대 유인태(Intae Ryu) 교수님([Ryu](https://x.com/desemboltura))과 인제대 의대의 안상진(Sangzin Ahn) 교수님([Ahn](https://x.com/mahler83))이 관련 논점을 비교적 선도적으로, 그리고 자주 언급하고 계시니 참고하시면 좋겠습니다.
+한국 학계에서는 대표적으로 디지털 인문학을 주로 하시는 유인태(Intae Ryu) 교수님([Ryu](https://x.com/desemboltura))과 인제대 의대의 안상진(Sangzin Ahn) 교수님([Ahn](https://x.com/mahler83))이 관련 논점을 비교적 선도적으로, 그리고 자주 언급하고 계시니 참고하시면 좋겠습니다.
 
 ### 마지막 메모
 제가 발췌해온 미국 학계 사람들은 대부분 미국 TOP 20 대학 PhD를 마치셨을 테고 이 과정에서 우리같은 International 학생이나 PhD students의 의견을 수집하지 않았다는 점에서 저 역시 학계의 비정상적인 학벌중심주의에 기여하고 있다고 봐도 되겠지요.
@@ -81,7 +81,7 @@ My take is this: Westwood’s language is certainly strong, but I think Douglass
 ### Follow-ups and Korean Context
 Westwood also posted follow-ups later—possibly in response to criticism, including criticism from different platform audiences ([follow-up 1](https://x.com/seanjwestwood/status/2026076268735742443?s=20), [follow-up 2](https://x.com/seanjwestwood/status/2026852781676528015?s=20)).
 
-In Korea, you can find that Intae Ryu (Chonnam National University) and Sangzin Ahn (Inje University College of Medicine) have been relatively proactive and frequent in commenting on related themes ([Ryu](https://x.com/desemboltura), [Ahn](https://x.com/mahler83)).
+In Korea, you can find that Intae Ryu and Sangzin Ahn (Inje University College of Medicine) have been relatively proactive and frequent in commenting on related themes ([Ryu](https://x.com/desemboltura), [Ahn](https://x.com/mahler83)).
 
 ### Final Note
 One last self-reflection: most of the U.S.-based academics I quoted here likely finished PhDs at top-20 U.S. programs, and I am not exactly collecting the opinions of international applicants or current PhD students like us. In that sense, it is fair to say that I am also contributing—at least indirectly—to academia’s unhealthy credentialism.
