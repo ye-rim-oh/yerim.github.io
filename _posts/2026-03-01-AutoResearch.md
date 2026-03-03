@@ -36,13 +36,13 @@ University of Notre Dame의 Keough School of Global Affairs 교수 Alexander Kus
 
 
 ### 제 생각
-Westwood가 말을 세게 하긴 했지만, Rex 박사님 말처럼 적절한 데이터가 있고(그리고 사용자가 그걸 필터링할 역량이 있다면) 저서/논문 PDF를 기계가 읽을 수 있는 형태로 정리해둔다면 선행연구 파트는 상당 부분 자동화가 가능하다고 생각합니다. 논문을 대신할 수 있는 다른 방안을 고려할 필요가 있다는 데에 동의하는 편이라고 정리할 수 있을 것 같네요. 
+Sean 교수께서 말을 세게 하긴 했지만, Rex 박사님 말처럼 적절한 데이터가 있고(그리고 사용자가 그걸 필터링할 역량이 있다면) 저서/논문 PDF를 기계가 읽을 수 있는 형태로 정리해둔다면 선행연구 파트는 상당 부분 자동화가 가능할 것이라고 생각합니다. 데이터 분석도 사실 AI의 특화 분야이니, 전반적으로 논문을 대신할 수 있는 다른 방안을 고려할 필요가 있다는 데에 동의하는 편이라고 정리할 수 있을 것 같네요. 
 
 결국 Kyle Saunders 교수님의 말씀처럼, AI가 교육을 망치는 게 아니라 대학이 얼마나 취약한 사고의 대리 지표에 기대 왔는지를 직면하게 만드는 측면이 있습니다([Saunders](https://kylesaunders.substack.com/p/why-higher-educations-ai-backlash?r=i13e)).
 
 
 ### 후속 논의와 한국 학계
-Sean 교수는 이후에도(특히 블루스카이 쪽 반응을 의식했는지) 후속 트윗을 올렸습니다([후속 1](https://x.com/seanjwestwood/status/2026076268735742443?s=20), [후속 2](https://x.com/seanjwestwood/status/2026852781676528015?s=20)).
+Sean 교수는 이후에도(특히 블루스카이 쪽 반응을 의식했는지) 후속 트윗을 올렸습니다([후속 1](https://x.com/seanjwestwood/status/2026076268735742443?s=20), [후속 2](https://x.com/seanjwestwood/status/2026852781676528015?s=20)). 블루스카이는 어떤 곳인 걸까요?
 
 한국 학계에서는 대표적으로 디지털 인문학을 주로 하시는 유인태(Intae Ryu) 교수님([Ryu](https://x.com/desemboltura))과 인제대 의대의 안상진(Sangzin Ahn) 교수님([Ahn](https://x.com/mahler83))이 관련 논점을 비교적 선도적으로, 그리고 자주 언급하고 계시니 참고하시면 좋겠습니다.
 
