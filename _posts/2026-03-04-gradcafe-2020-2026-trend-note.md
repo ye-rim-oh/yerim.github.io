@@ -51,7 +51,7 @@ GradCafe에 제출된 정치학 PhD 어드미션 데이터를 2020년부터 2026
 
 핵심 숫자만 먼저 보면:
 
-## 7. Master Summary Table
+## Summary Table
 
 | Year | Total Cases | Overall Accept Rate | American Cases | American Accept Rate | International Cases | International Accept Rate | GRE V mean | GRE Q mean | GPA Reporting Rate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
