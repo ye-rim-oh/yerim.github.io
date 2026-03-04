@@ -49,7 +49,8 @@ Sean 교수는 이후에도(특히 블루스카이 쪽 반응을 의식했는지
 
 - Baylor University의 Scott Cunningham 교수께서도 저널 출판의 현실적인 미래에 대해 언급하는 글을 올리셨습니다([Research and Publishing Are Now Two Different Things](https://causalinf.substack.com/p/claude-code-27-research-and-publishing/comments)). 우리나라의 교수 임용의 경우 미국보다도 더 양적 지표에 의존하는 경향이 있어서 우리나라도 남 일이 아니지요.
 
-- 결국 브루킹스 연구소에서 이러한 학계의 실태를 다루는 코멘터리 글이 올라왔습니다([열차는 떠났다](https://www.brookings.edu/articles/the-train-has-left-the-station-agentic-ai-and-the-future-of-social-science-research/)). AI를 활용한 연구는 모두 질이 떨어진다는 일부 사람들의 주장에 대해서 제 의견을 언급하자면, 저 같은 허접 연구자도 데이터만 있다면 그럴듯한 출판물을 뽑아낼 수 있게 되었으니 당연히 허접 워킹 페이퍼나 산출물이 많아질 순 있겠지만, 잘 쓰는 교수/연구자가 "일부 분야(예를 들어 선행연구의 요약이나, 양적 연구를 위한 코딩을 '바이브'로 한다던가)"에 국한해서 효율성을 제고시킬 경우는 아예 고려하지 않는 경우가 많더군요. Alexander Kustov 교수의 블로그에도 언급되었듯 이미 초록만 보고 대충 인용하는 경우도 적지 않을텐 말입니다.
+- 결국 브루킹스 연구소에서 이러한 학계의 실태를 다루는 코멘터리 글이 올라왔습니다([열차는 떠났다](https://www.brookings.edu/articles/the-train-has-left-the-station-agentic-ai-and-the-future-of-social-science-research/)).
+- AI를 활용한 연구는 모두 질이 떨어진다는 일부 사람들의 주장에 대해서 제 의견을 언급하자면, 저 같은 허접 연구자도 데이터만 있다면 그럴듯한 출판물을 뽑아낼 수 있게 되었으니 당연히 허접 워킹 페이퍼와 산출물이 많아질 순 있겠지만, 잘 쓰는 교수/연구자가 "일부 분야(예를 들어 선행연구의 요약이나, 양적 연구를 위한 코딩을 '바이브'로 한다던가)"에 국한해서 효율성을 제고시킬 경우는 아예 고려하지 않는 경우가 많더군요. Alexander Kustov 교수의 블로그에도 언급되었듯 이미 초록만 보고 대충 인용하는 경우도 적지 않을텐데 말입니다.
 
 ### 한국 학계에서의 논의?
 
