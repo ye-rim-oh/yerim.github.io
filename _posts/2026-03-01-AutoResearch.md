@@ -1,6 +1,6 @@
 ﻿---
-title: "우리는 연구를 자동화할 수 있을 것인가"
-slug: "2026-03-01-AutoResearch.md"last_modified_at: 2026-03-04
+title: "AI가 사회과학 연구를 할 수 있을까"
+slug: "2026-03-01-AutoResearch.md"
 tags:
   - Academia
   - AI
@@ -49,6 +49,7 @@ Sean 교수는 이후에도(특히 블루스카이 쪽 반응을 의식했는지
 - Baylor University의 Scott Cunningham 교수께서도 저널 출판의 현실적인 미래에 대해 언급하는 글을 올리셨습니다([Research and Publishing Are Now Two Different Things](https://causalinf.substack.com/p/claude-code-27-research-and-publishing/comments)). 우리나라의 교수 임용의 경우 미국보다도 더 양적 지표에 의존하는 경향이 있어서 우리나라도 남 일이 아니지요.
 
 한국 학계에서는 대표적으로 디지털 인문학을 주로 하시는 유인태(Intae Ryu) 교수님([Ryu](https://x.com/desemboltura))과 인제대 의대의 안상진(Sangzin Ahn) 교수님([Ahn](https://x.com/mahler83))이 관련 논점을 비교적 선도적으로, 그리고 자주 언급하고 계시니 참고하시면 좋겠습니다.
+
 
 
 
