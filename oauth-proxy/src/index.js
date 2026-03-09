@@ -177,9 +177,13 @@ export default {
       githubUrl.searchParams.set("scope", scopes);
       githubUrl.searchParams.set("state", state);
 
-      const response = Response.redirect(githubUrl.toString(), 302);
-      response.headers.set("set-cookie", setStateCookie(state));
-      return response;
+      return new Response(null, {
+        status: 302,
+        headers: {
+          location: githubUrl.toString(),
+          "set-cookie": setStateCookie(state),
+        },
+      });
     }
 
     if (url.pathname === "/callback") {
