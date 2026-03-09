@@ -5,3 +5,6 @@ _site
 .bundle
 vendor
 Gemfile.lock
+oauth-proxy/node_modules
+oauth-proxy/.dev.vars
+oauth-proxy/.wrangler

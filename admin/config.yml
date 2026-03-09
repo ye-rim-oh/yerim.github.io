@@ -1,0 +1,99 @@
+backend:
+  name: github
+  repo: ye-rim-oh/ye-rim-oh.github.io
+  branch: main
+  base_url: https://ye-rim-oh-decap-oauth.yerimoh-cms.workers.dev
+  auth_endpoint: auth
+
+site_url: https://ye-rim-oh.github.io
+display_url: https://ye-rim-oh.github.io
+logo_url: /assets/images/profile-photo-placeholder.svg
+
+media_folder: assets/images/uploads
+public_folder: /assets/images/uploads
+
+publish_mode: simple
+
+collections:
+  - name: posts
+    label: Posts
+    folder: _posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Last Modified
+        name: last_modified_at
+        widget: datetime
+        required: false
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Tags
+        name: tags
+        widget: list
+        required: false
+      - label: Show Table of Contents
+        name: toc
+        widget: boolean
+        default: true
+        required: false
+      - label: Show Author Profile
+        name: author_profile
+        widget: boolean
+        default: false
+        required: false
+      - label: Body
+        name: body
+        widget: markdown
+  - name: working_papers
+    label: Working Papers
+    folder: _working_papers
+    create: true
+    slug: "{{slug}}"
+    preview_path: "working-papers/{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - label: Title
+        name: title
+        widget: string
+      - label: Date
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+      - label: Status
+        name: status
+        widget: select
+        options:
+          - Idea
+          - In Progress
+          - Draft
+          - Submitted
+          - Revising
+        default: In Progress
+      - label: Summary
+        name: summary
+        widget: text
+        required: false
+      - label: Show Author Profile
+        name: author_profile
+        widget: boolean
+        default: false
+        required: false
+      - label: Body
+        name: body
+        widget: markdown

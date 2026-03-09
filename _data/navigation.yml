@@ -5,5 +5,7 @@ main:
     url: /cv/
   - title: "Posts"
     url: /posts/
+  - title: "Working Paper"
+    url: /working-paper/
   - title: "Tags"
     url: /tags/

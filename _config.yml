@@ -50,6 +50,11 @@ permalink: /:title/
 include:
   - _pages
 
+collections:
+  working_papers:
+    output: true
+    permalink: /working-papers/:path/
+
 exclude:
   - .sass-cache
   - .jekyll-cache
@@ -74,3 +79,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  - scope:
+      path: ""
+      type: working_papers
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      related: false
