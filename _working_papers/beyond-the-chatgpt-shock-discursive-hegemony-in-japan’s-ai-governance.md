@@ -12,7 +12,7 @@ author_profile: false
 </iframe>
 
 
-This paper is a refined version of a term paper originally submitted for the Fall 2025 course, Studies in the Global Politics of Information (Cyber-AI Complex Nexus) and It’s also the writing sample I used for my Fall 2026 PhD applications. The core content is pretty much the same, but I’ve integrated 'Dominant Frame Shares' and 'Risk-Benefit Valence' and given the overall prose a bit more polish.
+This paper is a refined version of a term paper originally submitted for the Fall 2025 course, Studies in the Global Politics of Information (Cyber-AI Complex Nexus) and It’s also the writing sample I used for my Fall 2026 PhD applications. The core content is pretty much the same, but I’ve integrated'Risk-Benefit Valence,' reduced ITS part and given the overall prose a bit more polish.
 
 I was actually quite proud of this piece as I had aligned my Statement of Purpose, CV, and letters of recommendation to focus on the political implications of AI. However, the outcomes were pretty brutal...
 
