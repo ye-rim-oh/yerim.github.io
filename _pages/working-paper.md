@@ -6,7 +6,7 @@ author_profile: true
 
 This page collects experimental articles and exploratory papers that grew out of semester term papers I wrote during the semester and early research notes developed in class. I am now revising and extending some of them into fuller drafts.
 
-Some entries may remain short while a project is still being tested or expanded. When a piece develops into a fuller research draft, I will update the write-up here.
+This page will be updated as revised files are added over time.
 
 {% assign papers = site.working_papers | sort: "date" | reverse %}
 <section class="working-paper-list">
