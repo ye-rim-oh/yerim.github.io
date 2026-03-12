@@ -15,7 +15,7 @@ permalink: /
 </p>
 
 <p>
-  Before starting my master's program, I studied Thai and Japanese at Hankuk University of Foreign Studies and worked at Seoul National University's Asia Center and as a Junior Scholar at the Wilson Center.
+  Before beginning my master's program, I studied Thai and Japanese at Hankuk University of Foreign Studies, worked at Seoul National University's Asia Center, and served as a Junior Scholar at the Wilson Center.
 </p>
 
 <p>
