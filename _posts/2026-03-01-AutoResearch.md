@@ -1,5 +1,5 @@
 ---
-title: "Can AI Replace Parts of Social Science Research?"
+title: "Can AI Conduct Social Science Research?"
 slug: 2026-03-01-AutoResearch.md
 date: 2026-03-01
 last_modified_at: 2026-03-12
@@ -10,54 +10,58 @@ toc: true
 author_profile: false
 ---
 
-### A Shift in U.S. Political Science
+### Changes in U.S. Academia?
 
-As Claude Code has become more visible this year, it seems increasingly clear that U.S. political scientists are starting to integrate AI into their daily work more explicitly. Pedro H. C. Sant'Anna at Emory has shared his own workflow([Sant'Anna](https://psantanna.com/claude-code-my-workflow/)), and Chris Blattman at Chicago Harris has been posting practical examples of automation([Blattman](https://x.com/cblatts/status/2027018464670491065?s=20)). Blattman even frames it as simply [talking to ChatGPT](https://x.com/cblatts/status/2027134883898757458?s=20), which suggests how quickly this style of work is becoming normalized.
+As Claude Code became hot this year, it seems that even in U.S. academia there is finally a visible trend of faculty starting to take the usefulness of AI seriously. Professor Pedro H. C. Sant'Anna at Emory University also shared his own workflow([Sant'Anna](https://psantanna.com/claude-code-my-workflow/)), and Professor Chris Blattman at the University of Chicago Harris School has also continued to share examples of automation([Blattman](https://x.com/cblatts/status/2027018464670491065?s=20)). Professor Chris even retweeted a meme like [i just talk to chatgpt](https://x.com/cblatts/status/2027134883898757458?s=20), so it also seems that he consumes AI discourse quite actively.
 
-### What Sparked My Interest
+### Where My Interest Started
 
-I became interested in research automation through the mundane experience of working with research documents in LaTeX and VS Code. At the time, AI CLIs were just beginning to enter ordinary workflows, and even grammar correction still required substantial human cleanup at the end. Once I saw a model revise long files directly from the terminal, it became hard to ignore how much the baseline had changed. That pushed me toward the view that if a researcher provides a clear argument structure and machine-readable data and literature, at least part of paper writing can now be automated.
+I became interested in research automation using AI because, while preparing materials for 2026 fall admissions, I was writing things like a Writing Sample and SOP in LaTeX and using VS Code. At the time, various AI CLIs were only just coming in, and I remember it as the point when discussions like "how are we supposed to use this?" were only beginning. I was not confident in English grammar, so I had corrected things over and over with GPT or Grammarly, but in the end it was too tiring that a person still had to polish everything manually all the way through every time. But if you just type `gemini` in the terminal and say, "Please fix the grammar in this file," it reads a `.tex` file hundreds of lines long and corrects the grammar on its own. Watching that, I began to think that it was probably only a matter of time not just before grammar correction, but before AI could write a paper from machine-readable data and literature files alone, as long as the researcher set up the logic properly.
 
-### Public Signals
+### Public Precedents
 
-It is not as if AI-assisted paper writing appeared out of nowhere. Joshua Gans has written about how AI may affect research production([Gans](https://joshuagans.substack.com/p/what-will-ai-do-to-presearch)), and Vincent Gregoire at HEC Montreal has published an account of his own `vibe research` workflow([Gregoire](https://vincent.codes.finance/posts/vibe-research-paper/)). The number of public examples is still limited, but these cases suggest that the conversation has already moved from pure speculation to workflow design.
+In fact, it is not as if there have been absolutely no precedents of papers written with AI getting accepted. Joshua Gans discussed, in a case-based way, what kind of effects AI might have on research production based on his own idea([Gans](https://joshuagans.substack.com/p/what-will-ai-do-to-presearch)), and Vincent Gregoire at HEC Montreal also posted a "Vibe Research" write-up on his own website([Gregoire](https://vincent.codes.finance/posts/vibe-research-paper/)). And honestly, I think there are probably quite a few papers even now that got accepted without saying so. There is almost no benefit to disclosing it.
 
-### At the Center of the Debate: Hall and Westwood
+### The Center of the Debate: Hall & Westwood
 
-Two of the most visible figures in the public debate over literature review and research automation are Andy Hall at Stanford and Sean Westwood at Dartmouth.
+Anyway, in the current situation where faculty are also getting better and better at using AI, I wanted to leave a record because the debate around literature review especially stood out to me. It is hard to identify the exact starting point, but by my own sense, the center of the debate is Professor Andy Hall at Stanford and Professor Sean Westwood at Dartmouth.
 
-- Andy Hall argues that Claude Code can already draft a full empirical political science paper([Here's proof that Claude Code can write an entire empirical polisci paper](https://x.com/ahall_research/status/2007603340939800664?s=20)) and that empirical social scientists should adapt their practices accordingly([I'm baffled by any empirical social scientist who isn't paying attention to these trends and isn't changing their practices accordingly](https://x.com/ahall_research/status/2025282331997798585?s=20)). He also raises the downstream question of how agentic systems may scale paper production and p-hacking([AI is about to write thousands of papers. Will it p-hack them?](https://x.com/ahall_research/status/2024544040784720365?s=20)).
-- Sean Westwood is much more skeptical. His argument is that these tools may encourage people to skip the actual work of reading, writing, and thinking, while inflating the number of plausible-looking but intellectually shallow outputs([original post](https://x.com/seanjwestwood/status/2025711352921112651?s=20)).
+- Professor Andy Hall has long argued that the operating logic of academia needs to change fundamentally, while sharing messages along the lines that Claude Code made research "fully reproducible"([Here's proof that Claude Code can write an entire empirical polisci paper](https://x.com/ahall_research/status/2007603340939800664?s=20), [I'm baffled by any empirical social scientist who isn't paying attention to these trends and isn't changing their practices accordingly](https://x.com/ahall_research/status/2025282331997798585?s=20)). He also does fairly aggressive experiments in automating social science research, such as making AI do p-hacking([AI is about to write thousands of papers. Will it p-hack them?](https://x.com/ahall_research/status/2024544040784720365?s=20)), so I feel he is close to being a frontrunner.
+- If Professor Andy Hall is on the side of demonstrating "how AI is changing research," I think Professor Sean Westwood is closer to the person who set the debate on fire. On February 23, 2026, in the post's timeline, he posted the provocative tweet that "the academic paper is a dead format"([original post](https://x.com/seanjwestwood/status/2025711352921112651?s=20)), and of course the backlash was large. The rough point was that AI will do literature reviews better, AI will already do peer review too, and users will only skim AI summaries, so real science is the research question, pre-analysis plan, and analysis, while a 30-page paper is only packaging.
 
 ### Reactions
 
-- Melissa Perreault's response is a strong warning against treating this shift casually([Perreault](https://x.com/Dr_Perreault/status/2026268605453681115?s=20)).
-- Rex Douglass argues that many "AI cannot do this" claims are really complaints about workflow design and prompting skill([Douglass](https://x.com/RexDouglass/status/2025812734332580212?s=20)).
-- Craig Gallagher makes a similar point: once a task can be done well in minutes, defending the slower baseline becomes less persuasive([Gallagher](https://x.com/CraigGaIIagher/status/2025947575627465002?s=20)).
-- Matthew Cole suggests that many social scientists may still be underestimating how quickly practice is shifting([Cole](https://x.com/mattbencole/status/2026357969114337785?s=20)).
-- Itai Sher remains one of the more persistent skeptics in this debate([Sher1](https://x.com/itaisher/status/2028628055300710772?s=20), [Sher2](https://x.com/itaisher/status/2022622746929447421?s=20), [Sher3](https://x.com/itaisher/status/2022128868480733554?s=20)).
+- Professor Melissa Perreault criticized it strongly in a tone roughly like, "the future that person wants is lazy researchers who cannot communicate, have no critical thinking, and ten times more garbage papers"([Perreault](https://x.com/Dr_Perreault/status/2026268605453681115?s=20)).
+- Dr. Rex Douglass pushed back in the direction that "when you listen to scholars saying what LLMs cannot do, in the end it is a skill issue. A weak model, without guidance, might fail to satisfy a strange request in one shot, but most of the workflow can still be automated even now"([Douglass](https://x.com/RexDouglass/status/2025812734332580212?s=20)).
+- Professor Craig Gallagher left a skeptical reaction along the lines of, "LLMs easily throw away principles they had five minutes ago if you complain, and you want me to believe that such a model will do peer review?"([Gallagher](https://x.com/CraigGaIIagher/status/2025947575627465002?s=20)).
+- Political theorist Matthew Cole sharply remarked that this is basically a way for quantitative social scientists to confess that they are producing trash they themselves do not want to write and do not want to read([Cole](https://x.com/mattbencole/status/2026357969114337785?s=20)).
+- Professor Itai Sher at the University of Massachusetts Amherst continues to maintain a skeptical view toward "research done by AI"([Sher1](https://x.com/itaisher/status/2028628055300710772?s=20), [Sher2](https://x.com/itaisher/status/2022622746929447421?s=20), [Sher3](https://x.com/itaisher/status/2022128868480733554?s=20)).
 
-### My Take
+### My Thoughts
 
-- Sean Westwood's warning should be taken seriously. Still, I think Rex Douglass is right that once the inputs are well structured and the user can filter outputs competently, a meaningful share of the literature review process becomes automatable.
-- The important point is not that AI fully replaces scholarly work, but that many stages of paper production are now modular in a way they were not before. Data cleaning, literature synthesis, coding, and drafting can increasingly be chained together.
+- Professor Sean put it strongly, but as Dr. Rex said, if there is appropriate data and the user has the ability to filter it, then if books and paper PDFs are organized into a form machines can read, I think a significant part of the literature review section can indeed be automated. Data analysis is also in fact a specialty area for AI, so overall I think I would summarize my position as leaning toward agreement that we need to consider other ways in which papers might be replaced.
+- As for my own view on the claim some people make that all AI-assisted research is low quality: even someone as mediocre as me can now produce something that looks like a plausible publication if the data are there, so of course there may well be more mediocre working papers and outputs. But many people do not seem to consider at all the case where a professor or researcher who writes well uses AI in a more detailed, field-specific way, for example from summarizing prior research to "vibe" coding for quantitative research, and raises efficiency in a careful way. As was also mentioned in Professor Alexander Kustov's blog, there are already plenty of cases where people just cite things roughly after looking only at the abstract.
 
-### Follow-up
+### Follow-up Discussion
 
-Sean Westwood continued the discussion in later posts([follow-up 1](https://x.com/seanjwestwood/status/2026076268735742443?s=20), [follow-up 2](https://x.com/seanjwestwood/status/2026852781676528015?s=20)), and the debate kept spreading across both X and Bluesky.
+Professor Sean later posted follow-up tweets too, perhaps especially because he was conscious of the reaction on Bluesky([follow-up 1](https://x.com/seanjwestwood/status/2026076268735742443?s=20), [follow-up 2](https://x.com/seanjwestwood/status/2026852781676528015?s=20)). What kind of place is Bluesky, anyway?
 
-#### The Claim That AI Already Outperforms Some PhDs (2026-03-04 update)
+#### Is AI Already Better at Research Than Many Professors? (added 26/03/04)
 
-- Alexander Kustov at Notre Dame pushed the argument even further, claiming that AI can already do social science research better than most professors with PhDs([post](https://x.com/akoustov/status/2028623202306428986?s=20)). In a related blog post, he argues that much of the opposition to AI looks more like status protection than principle([Academics Need to Wake Up on AI](https://alexanderkustov.substack.com/p/academics-need-to-wake-up-on-ai)).
-- Scott Cunningham at Baylor frames the issue as a growing separation between research and publishing([Research and Publishing Are Now Two Different Things](https://causalinf.substack.com/p/claude-code-27-research-and-publishing/comments)).
-- Brookings has also started treating this as a mainstream research-governance issue rather than a fringe curiosity([Brookings](https://www.brookings.edu/articles/the-train-has-left-the-station-agentic-ai-and-the-future-of-social-science-research/)).
+- Professor Alexander Kustov of the Keough School of Global Affairs at the University of Notre Dame also posted the provocative tweet, "[AI can already do social science research better than most professors with PhDs](https://x.com/akoustov/status/2028623202306428986?s=20)." In his [blog](https://alexanderkustov.substack.com/p/academics-need-to-wake-up-on-ai), he says that "much of the opposition to AI is status protection dressed up as principle," and he specifically points to scholars on Bluesky as denying what is happening.
+  - As an aside, the author said that the blog article itself was written 100% with Claude, but according to Pangram, which had been promoted on Twitter as especially good at detecting AI-written text, it apparently counted as ["Fully Human Written"](https://x.com/akoustov/status/2028877336007840048?s=20).
+  - In the end, as Professor Kyle Saunders says, there is also the aspect that AI is not ruining education so much as forcing universities to confront how much they have relied on fragile proxy indicators of thinking([Saunders](https://kylesaunders.substack.com/p/why-higher-educations-ai-backlash?r=i13e)).
 
-#### Follow-up to the Follow-up (2026-03-05 update)
+- Professor Scott Cunningham at Baylor University also posted a piece discussing the realistic future of journal publishing([Research and Publishing Are Now Two Different Things](https://causalinf.substack.com/p/claude-code-27-research-and-publishing/comments)). In the Korean case, faculty hiring also tends to rely even more heavily on quantitative indicators than in the United States, so this is not somebody else's problem for us either.
 
-- Alexander Kustov published a [follow-up post](https://alexanderkustov.substack.com/p/academics-need-to-wake-up-on-ai-part).
-- Igor Logvinenko added his own critique of how academia is thinking about AI([Why Academia Can't Think Clearly About AI](https://x.com/igorlogvinenko/status/2029344322097955060)).
-- It is still too early to collapse everything into one conclusion, but it is already difficult to treat research automation as a peripheral topic.
+- In the end, a commentary also appeared from the Brookings Institution dealing with this state of affairs in academia([the train has left the station](https://www.brookings.edu/articles/the-train-has-left-the-station-agentic-ai-and-the-future-of-social-science-research/)).
 
-### Discussion in Korean Political Science
+#### Follow-up to the Follow-up (added 26/03/05)
 
-There are also scholars in Korean political science who keep returning to the issue of AI and research productivity. I have especially found the discussions around [Professor Son Yeolhan](https://x.com/desemboltura) and [Professor Lee Sangjin](https://x.com/mahler83) useful as reference points.
+- Professor Alexander Kustov's [follow-up post](https://alexanderkustov.substack.com/p/academics-need-to-wake-up-on-ai-part)
+- Occidental College professor Igor Logvinenko's Twitter article, [Why Academia Can't Think Clearly About AI](https://x.com/igorlogvinenko/status/2029344322097955060)
+- There are in fact many more opinions besides these, but it seems difficult for me, just as an individual student, to follow up on all of them.
+
+### Discussion in Korean Academia?
+
+In Korean academia, it may be useful to refer especially to Professor [Yoo In-tae](https://x.com/desemboltura), who mainly works in digital humanities, and Professor [Ahn Sang-jin](https://x.com/mahler83), who have raised these issues relatively early and quite often.

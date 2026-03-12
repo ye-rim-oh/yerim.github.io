@@ -1,5 +1,5 @@
 ---
-title: "Political Science PhD Admission Trends on GradCafe, 2020-2026"
+title: "GradCafe-Based Political Science PhD Admission Trends, 2020-2026"
 slug: gradcafe-2020-2026-trend-note
 date: 2026-03-04
 last_modified_at: 2026-03-12
@@ -10,11 +10,10 @@ toc: true
 author_profile: false
 ---
 
-This post summarizes scraped GradCafe reports on political science PhD admissions from 2020 through 2026 and highlights patterns that seem meaningful from an applicant's point of view.
-
+I scraped and organized political science PhD admission data submitted to GradCafe from 2020 to 2026, and recorded a few points that seemed meaningful from an applicant's point of view.
 - Base repository: [ye-rim-oh/GradCafe](https://github.com/ye-rim-oh/GradCafe)
 
-> Update: as of 2026-03-04, I re-scraped the full 2020-2026 span and refreshed the reported values.
+> Update: as of 2026-03-04, I scraped the full 2020-2026 seasons again and updated the figures.
 
 ## Interactive Dashboard
 
@@ -39,20 +38,18 @@ This post summarizes scraped GradCafe reports on political science PhD admission
   </iframe>
 </div>
 
-## Caveats
+## Points to Keep in Mind
 
-- GradCafe reports are self-posted and should not be treated as representative of the full applicant pool.
-- One applicant may report outcomes from multiple schools, so a count of reports should not be read as the same thing as a count of unique applicants.
-- GRE, subfield, and nationality information are especially incomplete and potentially biased.
-- The statistics in this post are current as of March 4, 2026.
+- Because GradCafe reports are posted voluntarily by applicants, they naturally do not represent the entire population.
+  One applicant may apply to many schools and report multiple results, so if there are 12 reported cases, that does not necessarily mean 12 people. It could be 6 people reporting 2 schools each, or 3 people reporting 4 schools each.
+- GRE scores, subfield information, and nationality information in particular have a lot of missingness and bias.
+- The figures in this post are current as of March 4, 2026.
 
-Even with those limitations, the data are still useful for reading broad patterns such as when results cluster, how competitive cycles feel across years, and how large nationality gaps appear to be.
+Even so, it is still fairly useful for reading things like when announcements cluster by school and how competitive each year feels.
 
 ## Key Summary
 
-The full report includes **3,766 cases**, and the 2026 season alone contributes **858 cases**, the largest annual sample in the series.
-
-## Summary Table
+### Summary Table
 
 | Year | Total Cases | Overall Accept Rate | American Cases | American Accept Rate | International Cases | International Accept Rate | GRE V mean | GRE Q mean | GPA Reporting Rate |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -64,27 +61,30 @@ The full report includes **3,766 cases**, and the 2026 season alone contributes 
 | 2025 | 505 | 36.5% | 176 | 41.5% | 329 | 33.7% | 163.4 | 165.3 | 57.8% |
 | 2026 | 858 | 34.5% | 366 | 42.5% | 492 | 28.5% | 163.9 | 165.8 | 66.7% |
 
-- The 2026 sample is the largest in the 2020-2026 window.
-- Overall acceptance has stayed in the mid-30% range for the last two cycles, below the earlier highs.
-- The 2026 nationality gap is **14.1 percentage points**.
+- The 2026 admission-season sample was the largest in 2020-2026.
+- The overall acceptance rate was in the mid-30% range in both of the most recent two seasons, lower than the previous peak of 45.9% in 2020 and 2023.
+- The nationality gap in the 2026 admission season was **14.1%p** (American 42.5% - International 28.5%).
 
-## Patterns That Stand Out
+## What Stood Out
 
 ### 1) American > International
 
-There is year-to-year variation, but in most years American applicants show a higher acceptance rate than international applicants. The main exception is 2022, and by 2026 the gap widens again.
+There is year-to-year variation, but in most years the American acceptance rate is higher than the International acceptance rate.
+The exception is 2022 (International 48.8% > American 40.4%), and in 2026 the gap widened again.
 
-### 2) Timing Still Centers on Early to Mid-February
+### 2) The Timing of the Season Still Centers on Early to Mid-February
 
-Except for 2020, `Median Final` generally clusters in early to mid-February. In 2026, the median final date is **02/10**, which looks very typical for this series.
+Except for 2020, `Median Final` is generally concentrated in early to mid-February.
+In 2026, `Median Final` is **02/10**, which is close to a typical pattern.
 
-### 3) Be Careful With Subfield Interpretation
+### 3) Interpretation of Subfields Still Needs to Be Conservative
 
-Even in 2026, `Subfield Known %` is only **26.2%**, so subfield comparisons should be treated as directional rather than definitive. Within the reported subset, the CP tag appears most often.
+Even in 2026, `Subfield Known %` is only **26.2%**, so it is safer to treat subfield comparisons only as a directional reference.
+Still, within the range of reported cases, the CP tag appears most often.
 
-### 4) Linear Correlation Between GRE or GPA and Admission Is Very Weak
+### 4) The Linear Correlation Between GRE/GPA and Admission Is Very Weak
 
-Across the full 2020-2026 sample, the score-admission correlations are:
+The score-admission correlations for the combined 2020-2026 data are as follows.
 
 | Metric | Valid N | Correlation r | p-value | Interpretation |
 | --- | --- | --- | --- | --- |
@@ -93,19 +93,21 @@ Across the full 2020-2026 sample, the score-admission correlations are:
 | GRE Q | 881 | 0.117 | 0.0005 | Very weak linear correlation |
 | GRE AW | 812 | 0.005 | 0.8952 | No meaningful linear correlation |
 
-Even where the coefficients are statistically significant, the effect sizes are small. In practice, research fit, letters, writing samples, and school-specific cutoffs are likely doing more of the explanatory work.
+Even when there is statistical significance, the effect size itself is small, so in practice other factors such as research fit, recommendation letters, the writing sample, and school-level fit are likely to create larger variation.
 
-## Applicant Takeaways
+## From an Applicant's Point of View
 
-1. **Decisions cluster in mid-February**<br>
-   Most major programs release accept or reject outcomes around this period.
+1. **Announcements mostly cluster in mid-February**<br>
+   This is the period when many major schools' accept/reject results are concentrated.
 
-2. **Do not infer the whole cycle from early reports alone**<br>
-   Some years, like 2026, expand substantially after the first wave of reports, and later updates such as waitlist outcomes can shift the picture.
-   Separate GradCafe chatter also suggested very small incoming cohorts at some programs, which is consistent with how competitive the cycle felt.
+2. **Do not infer the whole season from only the early sample**<br>
+   There are years like 2026 when the early sample grows a lot.
+   Later updates, especially things like waitlists, can change some of the indicators.
+   Separately, there were also GradCafe rumors this cycle that Duke admitted only 3 people and Georgetown only 6, so it really does seem to have been a very hard season.
 
-3. **Nationality, subfield, and GRE tables are better read as rough signals**<br>
-   There is too much missing information to treat these tables as predictive models for individual outcomes.
+3. **The nationality/subfield/GRE tables are only "mood indicators"**<br>
+   There is far too much missing data to use them as a model for predicting any individual's outcome.
 
-4. **A large share of the outcome is not explained by quantitative credentials alone**<br>
-   Weak GRE and GPA correlations suggest that non-quantitative factors matter a great deal. At the same time, very strong quantitative profiles still appear repeatedly among applicants admitted to top programs, so the right conclusion is not that credentials do not matter, but that they do not explain outcomes by themselves.
+4. **There is a large part that cannot be explained by quantitative specs alone**<br>
+   The weak correlation between GRE/GPA and admission can be interpreted to mean that there are many influences besides quantitative factors, and in textbook terms it is more realistic to build one's strategy around school-specific fit.
+   But separately from that, I watched admission-result postings from the 2026 cycle in real time, and when you see that students with something like a combined GRE of 330, AW 5+, and an Ivy League undergraduate degree are often choosing among top programs, it still does seem that specs matter after all.
