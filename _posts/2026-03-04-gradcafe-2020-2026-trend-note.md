@@ -103,11 +103,11 @@ Even when there is statistical significance, the effect size itself is small, so
 2. **Do not infer the whole season from only the early sample**<br>
    There are years like 2026 when the early sample grows a lot.
    Later updates, especially things like waitlists, can change some of the indicators.
-   Separately, there were also GradCafe rumors this cycle that Duke admitted only 3 people and Georgetown only 6, so it really does seem to have been a very hard season.
+   Separately, according to GradCafe chatter this cycle, Duke admitted only 3 people in total and Georgetown only 6, so it really does seem to have been a very hard season.
 
 3. **The nationality/subfield/GRE tables are only "mood indicators"**<br>
    There is far too much missing data to use them as a model for predicting any individual's outcome.
 
 4. **There is a large part that cannot be explained by quantitative specs alone**<br>
    The weak correlation between GRE/GPA and admission can be interpreted to mean that there are many influences besides quantitative factors, and in textbook terms it is more realistic to build one's strategy around school-specific fit.
-   But separately from that, I watched admission-result postings from the 2026 cycle in real time, and when you see that students with something like a combined GRE of 330, AW 5+, and an Ivy League undergraduate degree are often choosing among top programs, it still does seem that specs matter after all.
+   But separately from that, as I watched GradCafe admission-result postings from the 2026 cycle in real time, when you see students with something like a combined GRE of 330, AW 5+, and an Ivy League undergraduate degree often choosing among top programs, it still does seem that specs matter after all.
