@@ -1,5 +1,5 @@
 ---
-title: "GradCafe-Based Political Science PhD Admission Trends, 2020-2026"
+title: GradCafe-Based Political Science PhD Admission Trends, 2020-2026
 slug: gradcafe-2020-2026-trend-note
 date: 2026-03-04
 last_modified_at: 2026-03-12
@@ -9,6 +9,8 @@ tags:
 toc: true
 author_profile: false
 ---
+
+## Introduction
 
 I scraped and organized political science PhD admission data submitted to GradCafe from 2020 to 2026, then noted a few patterns that seemed meaningful from an applicant's point of view.
 - Base repository: [ye-rim-oh/GradCafe](https://github.com/ye-rim-oh/GradCafe)
@@ -100,17 +102,14 @@ I scraped and organized political science PhD admission data submitted to GradCa
 
 - This is the period when many major schools' accept/reject results are concentrated.
 
-### 2) Do Not Infer the Whole Season From the Early Sample Alone
-
-- There are years like 2026 in which the early sample expands substantially.
-- Later updates, especially things like waitlists, can shift some of the indicators.
-- Separately, according to GradCafe chatter this cycle, Duke admitted only 3 people in total and Georgetown only 6, so it really does seem to have been a very hard season.
-
-### 3) The Nationality, Subfield, and GRE Tables Are Best Read as Mood Indicators
+### 2) The Nationality, Subfield, and GRE Tables Are Best Read as Mood Indicators
 
 - There is far too much missing data to use them as a model for predicting any individual's outcome.
 
-### 4) A Large Share of the Outcome Cannot Be Explained by Quantitative Specs Alone
+- Separately, according to GradCafe forum this cycle, Duke admitted only three students and Georgetown only six, which makes this admissions season appear especially brutal.
+
+
+### 3) A Large Share of the Outcome Cannot Be Explained by Quantitative Specs Alone
 
 - The weak correlation between GRE/GPA and admission suggests that many forces besides quantitative factors are shaping outcomes, and in textbook terms it is more realistic to build one's strategy around school-specific fit.
-- At the same time, as I watched GradCafe admission-result postings from the 2026 cycle in real time, when students with something like a combined GRE of 330, AW 5+, and an Ivy League undergraduate degree were often choosing among top programs, it still seemed clear that specs matter after all.
+- At the same time, as I watched GradCafe admission posts from the 2026 cycle in real time, it became hard to ignore the fact that applicants with profiles such as a 330+ GRE, a 5.0+ AW score, and an Ivy League undergraduate degree were often choosing among top programs. In that sense, it still seemed clear that conventional metrics do matter after all.
