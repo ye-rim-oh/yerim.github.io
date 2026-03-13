@@ -1,11 +1,11 @@
 main:
-  - title: "Home"
+  - title: "Home / 홈"
     url: /
-  - title: "CV"
+  - title: "CV / 이력"
     url: /cv/
-  - title: "Posts"
+  - title: "Posts / 글"
     url: /posts/
-  - title: "Experimental Articles"
+  - title: "Works in Progress"
     url: /experimental-articles/
-  - title: "Tags"
+  - title: "Tags / 태그"
     url: /tags/

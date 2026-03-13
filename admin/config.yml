@@ -58,7 +58,7 @@ collections:
         name: body
         widget: markdown
   - name: working_papers
-    label: Experimental Articles
+    label: Works in Progress
     folder: _working_papers
     create: true
     slug: "{{slug}}"

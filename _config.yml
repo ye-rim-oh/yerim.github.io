@@ -7,7 +7,7 @@ title: "Yerim Oh"
 title_separator: "|"
 subtitle:
 name: "Yerim Oh"
-description: "Notes archive"
+description: "Notes archive | 메모 아카이브"
 url: "https://ye-rim-oh.github.io"
 baseurl: ""
 repository: "ye-rim-oh/ye-rim-oh.github.io"
@@ -22,7 +22,7 @@ enable_copy_code_button: true
 author:
   name: "Yerim Oh"
   avatar: "/assets/images/profile-photo-placeholder.svg"
-  bio: "MA Candidate, Seoul National University"
+  bio: "MA Candidate, Seoul National University | 서울대학교 석사과정"
   location:
   links:
     - label: "GitHub"

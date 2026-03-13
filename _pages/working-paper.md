@@ -1,12 +1,14 @@
 ---
-title: "Experimental Articles"
+title: "Works in Progress"
 permalink: /experimental-articles/
 author_profile: true
 redirect_from:
   - /working-paper/
 ---
 
-This page collects term papers I wrote during the semester and am now revising and developing further. This page will be updated as revised files are added over time.
+이 페이지에는 학기 중에 작성한 글 가운데, 이후에 수정하고 확장해 보고 있는 원고들을 모아 둡니다.
+
+This page collects papers I wrote during the semester and am now revising and developing further.
 
 {% assign papers = site.working_papers | sort: "date" | reverse %}
 <section class="working-paper-list">
@@ -26,6 +28,6 @@ This page collects term papers I wrote during the semester and am now revising a
       </article>
     {% endfor %}
   {% else %}
-    <p>No experimental articles posted yet.</p>
+    <p>No works in progress posted yet.</p>
   {% endif %}
 </section>
