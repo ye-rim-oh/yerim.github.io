@@ -14,7 +14,7 @@ These are some research topics I had in mind for my PhD. I didn't want them to g
 
 ### Motivation
 
-Ideal point estimation—the standard IR approach to modeling political actors, derived from voting records or survey responses—captures positional preferences but says little about the psychological dispositions that shape how those preferences translate into decisions under uncertainty. The gap matters most in authoritarian regimes, where weak institutional constraints mean policy outcomes track the individual at the top far more directly than structural accounts assume. If personalist dictatorships are defined by "weakened institutions and narrow support bases" that amplify individual agency (Bell & Powell, cited in Wikipedia 2026), then incorporating personality into conflict prediction models is theoretically necessary, not an optional refinement.
+Ideal point estimation—the standard IR approach to modeling political actors, derived from voting records or survey responses—captures positional preferences but says little about the psychological dispositions that shape how those preferences translate into decisions under uncertainty. The gap matters most in authoritarian regimes, where weak institutional constraints mean policy outcomes track the individual at the top far more directly than structural accounts assume. If personalist dictatorships are defined by "weakened institutions and narrow support bases" that amplify individual agency, then incorporating personality into conflict prediction models is theoretically necessary, not an optional refinement.
 
 ### Core Argument
 
