@@ -46,8 +46,6 @@ The methodology integrates four layers: (1) traditional at-a-distance content an
 * **Output**: a leader-level numeric profile, comparable across a normed reference group.
   
 
-* * *
-
 #### Layer 2: LLM-Assisted Trait Scoring (Automation + Scale)
 
 The classical LTA/OCA pipeline is resource-intensive: it requires trained coders, is slow, and does not scale easily to large multilingual corpora. LLMs can address all three constraints simultaneously.
@@ -80,7 +78,6 @@ Where LLM runs disagree internally (SD > threshold) or diverge from classical Pr
 
 LLM-based annotation is viable across languages without separate model training, enabling inclusion of leaders whose primary discourse is in Russian, Mandarin, Arabic, or Korean—historically excluded from LTA/OCA studies that depend on English transcripts. This substantially expands the effective universe of cases.
 
-* * *
 
 #### Layer 3: LLM Persona Simulation (Prospective Prediction Module)
 
@@ -120,7 +117,7 @@ Validate the simulation against known historical outcomes. For example: does a p
 * This layer does not generate causal identification; it is a structured elicitation tool for hypothesis generation and plausibility assessment, not a confirmatory test.
   
 
-* * *
+
 
 #### Layer 4: Statistical Estimation (Outcome Modeling)
 
@@ -131,7 +128,7 @@ Validate the simulation against known historical outcomes. For example: does a p
 * **Process tracing (qualitative)**: for a subset of 3–5 cases, trace the causal chain: structural pressure → personality-filtered threat perception → domestic justification discourse → behavioral outcome. Primary sources for this layer should be cross-checked against Layer 3 simulation outputs as a consistency check.
   
 
-* * *
+
 
 #### Case Selection
 
@@ -190,6 +187,7 @@ Validate the simulation against known historical outcomes. For example: does a p
   
 * Manning, Andriy. 2025. “LLM-Based Persona Simulation: Survey of Methods and Limitations.” *Emergent Mind*. https://www.emergentmind.com/topics/llm-based-persona-simulation.
   
+* * *
 
 ## Does AI Use Make People More Conservative or More Progressive? A Longitudinal Field Experiment
 
@@ -308,7 +306,7 @@ The sycophancy-driven echo chamber mechanism predicts: Treatment A > Control in 
   
 * Motoki, Fabio, Valdemar Pinho Neto, and Victor Rodrigues. 2024. “More Human than Human: Measuring ChatGPT Political Bias.” *arXiv*. https://arxiv.org/abs/2412.16746.
   
-
+* * *
 ## Unequal Adoption, Unequal Voice: Identity-Based AI Utilization Gaps and Asymmetric Political Participation
 
 ### Motivation
@@ -436,3 +434,179 @@ Following the Korean case study, extend the design to a second Asian country wit
 **Technology and political participation**
 
 * Bail, Christopher A., et al. 2018. “Exposure to Opposing Views on Social Media Can Increase Political Polarization.” *Proceedings of the National Academy of Sciences* 115(37): 9216–9221.
+
+* * *
+
+## Electoral Seasonality and Gender-Targeted Mobilization in Korean Political Twitter Networks
+
+
+## Motivation
+ 
+Korean conservative politics has undergone a structural transformation since the 2022 presidential election, in which the People Power Party (PPP) ran an explicitly anti-feminist campaign and successfully channeled the grievances of young men (이대남, *yi-dae-nam*) into a decisive electoral bloc (Lee & Kim 2025). What remains empirically underexamined is whether this mobilization strategy extends beyond anti-feminist messaging toward young *women*—specifically, whether conservative actors attempt to selectively recruit or reframe issues for female audiences during election periods. The intuition motivating this project is that electoral seasons create concentrated windows of strategic communication, during which political networks may restructure themselves: new bridges form between previously disconnected communities, influence hierarchies shift, and gendered targeting becomes more deliberate.
+ 
+Twitter/X is a particularly suitable platform for observing this dynamic in the Korean context for three reasons. First, despite declining global user numbers, Twitter remains the dominant platform for elite political communication in Korea, including politicians, journalists, political influencers, and organized advocacy groups. Second, its retweet structure generates observable endorsement networks that can be used for community detection and ideological positioning without requiring content-level inference about user identity. Third, the temporal granularity of Twitter data enables before/during/after comparisons across electoral cycles.
+ 
+The central empirical question is: Does the structural topology of Korean conservative Twitter networks change in gender-specific ways during election periods, and do these changes exhibit patterns consistent with deliberate outreach toward female users?
+
+ 
+## Core Argument
+ 
+Conservative political actors in Korea engage in electorally seasonal network restructuring on Twitter, characterized by: (i) increased bridging ties between the conservative community cluster and accounts primarily retweeted by female users; (ii) elevated centrality of accounts that mix anti-feminist grievance content with women-facing issue framing (e.g., safety, economic anxiety, family policy); and (iii) accelerated cross-community diffusion of specific message types during the four-to-six-week window preceding elections. If confirmed, this constitutes evidence of deliberate gendered mobilization strategy operating at the network level—beyond what content analysis of individual accounts would reveal.
+ 
+
+ 
+## Data
+ 
+### Source and Collection
+ 
+- **Platform**: Twitter/X Academic Research API (now Basic/Pro tier; see API cost discussion below).
+- **Keywords and hashtag seeds**: constructed from major Korean political terms, candidate names, party hashtags, and gender-salient issue terms (여성, 페미니즘, 이대녀, 이대남, 여가부, 군가산점, etc.) across election windows.
+- **Target elections** (four observation windows):
+  - 2022 presidential election (March): T−6 weeks, T−3 weeks, T−1 week, T+2 weeks
+  - 2022 local elections (June)
+  - 2024 parliamentary election (April)
+  - 2025 presidential election (June): most recent case, real-time collection feasible if project is initiated promptly
+- **Corpus size target**: 5–10 million tweets per election window is achievable under current API tiers; 2022 data requires retrospective access which is now commercially tiered.
+ 
+#### User-Level Gender Inference
+ 
+Gender is not directly observable on Twitter. Three complementary approaches:
+ 
+1. **Name-based inference**: Korean given names carry strong gender signal. Apply a Korean name-gender lookup table (e.g., derived from KOSIS population registry name-gender distributions) to screen-names and display names. Precision is high for clearly gendered names; ambiguous and handle-only accounts are flagged as unknown.
+2. **Bio-text classification**: LLM-based zero-shot classification of profile bios for gender-indicative language (self-referential terms: 엄마, 직장인 여성, etc.). Validated against name-based inference on overlap cases.
+3. **Network-community proxy**: After community detection, label communities by aggregate gender composition using accounts with high-confidence individual gender inference, then assign community-level gender tendency scores. This is a distributional, not individual-level, inference.
+ 
+**Critical caveat**: gender inference at the individual account level is inherently noisy and must be treated as probabilistic. All individual-level inferences should be aggregated to the community level before drawing conclusions; individual-level gender attribution should not be reported.
+ 
+ 
+### Methodology
+ 
+#### Step 1: Retweet Network Construction
+ 
+For each election window, construct a directed weighted retweet graph G = (V, E, w) where:
+- V = set of unique users who authored or were retweeted
+- E = directed edge from user *u* to user *v* if *u* retweeted *v*
+- w(u, v) = number of retweets
+ 
+Filter to the giant connected component. Prune edges below a minimum weight threshold (e.g., w ≥ 2) to reduce noise from one-off interactions.
+ 
+#### Step 2: Community Detection
+ 
+Apply the **Louvain algorithm** (Blondel et al. 2008) to the undirected projection of the retweet graph, optimizing modularity. This is the standard approach in the Twitter political network literature and has been validated on Korean Twitter data (Kim & Park 2012; Yoo & Kim 2024). Target resolution: 3–6 major communities (progressive, conservative, anti-feminist/manosphere, feminist/progressive women, centrist/news-media, non-political).
+ 
+Assign ideological labels to communities via:
+- Seed accounts: known politicians, party accounts, and major political media outlets manually labeled.
+- Hashtag co-occurrence: dominant hashtags within each community provide content-level validation of the structural label.
+ 
+#### Step 3: Gender-Community Distribution Analysis
+ 
+For each community, compute:
+- **Gender composition score**: proportion of high-confidence gender-inferred accounts that are female.
+- **Gender homophily index**: whether female-inferred accounts preferentially retweet other female-inferred accounts within or across communities.
+ 
+Compare gender composition across communities and across election windows (non-election baseline → election window) to detect structural shifts.
+ 
+#### Step 4: Bridge Account Detection and Profiling
+ 
+Identify **bridge accounts**—accounts that connect the conservative community to communities with higher female composition—using:
+- **Betweenness centrality** in the inter-community subgraph
+- **Community membership change**: accounts that migrate from one community cluster to another across time windows (following the method in Ramaciotti Morales & Cointet 2024)
+ 
+Profile bridge accounts by content: what topics do they tweet about? Are they new accounts or existing ones? What is their follower-to-following ratio (potential astroturfing indicator)?
+ 
+#### Step 5: Temporal Dynamics — Electoral Seasonality Test
+ 
+The core empirical claim is that network restructuring is electorally seasonal. Test this with:
+ 
+- **Inter-community retweet ratio** (ICR): ratio of cross-community to within-community retweets, computed weekly. Prior work shows ICR decreases sharply in the weeks preceding elections and recovers post-election (Dogdu, Choupani & Sürücü 2024)—but the *direction* of cross-community flow (who is reaching out to whom) is what matters here, not just the volume.
+- **Granger causality test**: does the emergence of bridge accounts between the conservative cluster and female-leaning communities Granger-cause increases in retweet volume from those female-leaning communities toward conservative content?
+- **Difference-in-differences (DiD)**: compare the change in conservative → female-community bridge density across election windows (treatment) vs. non-election periods (control), using the 2022–2025 panel.
+ 
+#### Step 6: Content Analysis of Bridging Messages (LLM-Assisted)
+ 
+For the top-k (k ≈ 500–1,000) tweets authored by bridge accounts during election windows, apply LLM-based stance and frame classification:
+ 
+- **Issue frame**: economic anxiety / safety / family policy / anti-feminism / anti-DP / other
+- **Target audience signal**: explicit references to 여성, 이대녀, 엄마, or gender-neutral framing
+- **Sentiment toward feminism**: positive / neutral / critical / hostile
+ 
+This step tests whether bridging is accompanied by a *softening* of anti-feminist rhetoric (suggesting strategic reframing for female audiences) or maintains hostile framing (suggesting co-optation of women's issue vocabulary without attitudinal moderation).
+ 
+
+ 
+### Key Hypotheses
+ 
+| Hypothesis | Operationalization |
+|---|---|
+| H1: Electoral seasonality | ICR between conservative cluster and female-leaning communities increases in election windows relative to baseline |
+| H2: Directional asymmetry | Conservative→female-community bridging increases more than female-community→conservative bridging |
+| H3: Strategic reframing | Bridge account content during election windows shows reduced anti-feminist framing and increased women's issue vocabulary relative to non-election content from the same accounts |
+| H4: New bridge formation | Bridge accounts active in election windows are disproportionately recently created or previously low-centrality accounts, suggesting coordinated injection rather than organic community evolution |
+ 
+H4 is the "astroturfing" hypothesis—the most provocative and hardest to definitively confirm without ground truth, but addressable with account age, bot-score (Botometer or equivalent), and network injection pattern analysis.
+ 
+
+ 
+### API Cost and Feasibility Discussion
+ 
+This is the central practical constraint. Twitter/X API access tiers as of 2025:
+ 
+- **Free tier**: 1,500 tweets/month read; effectively useless for this project.
+- **Basic tier** (~USD 100/month): 10,000 tweets/month read. Insufficient for network-scale collection.
+- **Pro tier** (~USD 5,000/month): 1 million tweets/month read. Feasible for one election window per month; cumulative cost for four elections would be prohibitive without grant funding.
+- **Academic/Enterprise tier**: no longer openly available post-Musk acquisition; must be negotiated directly.
+ 
+**Feasible mitigation strategies**:
+ 
+1. **Retrospective data from third-party archives**: TweetSets (Library of Congress), Internet Archive Twitter Stream Grab (2022 data available), and academic data-sharing consortia (e.g., ICPSR, Harvard Dataverse political Twitter deposits) may provide 2022 election data at no marginal cost.
+2. **Keyword-targeted narrow collection**: instead of broad streaming, collect only tweets containing a pre-specified set of high-signal hashtags and keywords. This reduces volume by ~80–90% while retaining the politically active network core.
+3. **Snowball sampling from seed accounts**: starting from a list of major Korean political accounts (politicians, party accounts, top political influencers), collect their follower/following networks and tweets. This trades representativeness for depth on the politically active subgraph.
+4. **Collaboration with ICPSR / Korean political communication researchers**: Korean political science and communication departments (SNU, Yonsei, KAIST) may have existing data-sharing agreements or archived datasets.
+5. **Focus on 2024 and 2025 elections**: retrospective API access is more expensive; real-time collection starting now for the 2025 presidential election data is feasible at the Basic–Pro tier with careful keyword targeting.
+ 
+Realistic minimum budget for a properly powered study: USD 3,000–8,000 in API costs, plus compute time for network analysis (manageable on a university HPC cluster or AWS spot instances).
+ 
+ 
+### Expected Contributions
+ 
+1. **Empirical**: first systematic, longitudinal network analysis of Korean political Twitter with explicit gender-disaggregation and electoral seasonality as the organizing variable.
+2. **Theoretical**: bridges the political network analysis literature (which has focused on US and European cases) and the Korean gender politics literature (which has relied primarily on survey and electoral data), demonstrating that mobilization strategy is observable in network topology, not only in content.
+3. **Methodological**: demonstrates a pipeline for probabilistic gender inference in non-English Twitter networks using name-based and bio-text LLM classification, with explicit uncertainty quantification at the community rather than individual level.
+ 
+
+ 
+### Key Limitations
+ 
+- **Gender inference validity**: name-based inference is noisier for Korean Twitter than for English-language platforms because many users adopt non-name handles; community-level aggregation partially mitigates this but introduces ecological fallacy risk.
+- **Platform representativeness**: Twitter/X overrepresents politically engaged, educated, urban users; findings may not generalize to the broader Korean electorate or to Kakao/Naver-based political communities, which are structurally different.
+- **Causal identification**: network analysis is inherently observational; demonstrating that conservative actors *deliberately* target female users requires additional evidence (e.g., account coordination patterns, content strategy documents) beyond structural network change.
+- **API access instability**: X Corp's API policy has changed multiple times since 2022 and may change again; any real-time collection plan carries execution risk.
+
+### Reference
+
+**Korean political network / gender politics**
+ 
+Chung, Haejin. 2024. "Gender Wars and Populist Politics in South Korea." *Women's Studies International Forum* 104: 102906. https://www.sciencedirect.com/science/article/pii/S0277539524000530
+ 
+Kwon, Eunji, and Sooyeon Kim. 2025. "Blaming Feminists, Claiming Pain: Anti-Feminist Discourse and Electoral Mobilization by New Men's Solidarity in South Korea." *Women's Studies International Forum* 110: 102986. https://www.sciencedirect.com/science/article/pii/S0277539525001086
+ 
+Lee, Nae-Young, and Hyeshin Kim. 2025. "Anti-Gender Politics, Economic Insecurity, and Right-Wing Populism: The Rise of Modern Sexism among Young Men in South Korea." *Social Politics: International Studies in Gender, State & Society* 32(3): 584–614. https://academic.oup.com/sp/article/32/3/584/7826751
+ 
+Yoo, Jungwon, and Hyunjin Kim. 2024. "Semantic Networks of Election Fraud: Comparing the Twitter Discourses of the U.S. and Korean Presidential Elections." *Social Sciences* 13(2): 94. https://www.mdpi.com/2076-0760/13/2/94
+ 
+**Twitter political network methodology**
+ 
+Flamino, James, Alessandro Galeazzi, Stuart Feldman, Michael W. Macy, Brendan Cross, Zhenkun Zhou, Matteo Serafino, Alexandre Bovet, Hernán A. Makse, and Boleslaw K. Szymanski. 2023. "Political Polarization of News Media and Influencers on Twitter in the 2016 and 2020 US Presidential Elections." *Nature Human Behaviour* 7(6): 904–916. https://doi.org/10.1038/s41562-023-01550-8
+ 
+Guerrero-Solé, Frederic. 2017. "Community Detection in Political Discussions on Twitter: An Application of the Retweet Overlap Network Method to the Catalan Process Toward Independence." *Social Science Computer Review* 35(2): 244–261. https://doi.org/10.1177/0894439315617254
+ 
+Dogdu, Erdogan, Ramin Choupani, and Selin Sürücü. 2024. "Detecting Political Polarization Using Social Media Data." In *Advances in Intelligent Systems and Computing*, 3–14. Cham: Springer. https://link.springer.com/chapter/10.1007/978-3-031-61816-1_4
+ 
+Ramaciotti Morales, Pedro, and Jean-Philippe Cointet. 2024. "Polarization Dynamics: A Study of Individuals Shifting Between Political Communities on Social Media." arXiv:2408.07731. https://arxiv.org/html/2408.07731
+ 
+**LLM-assisted content classification**
+ 
+Ye, Jinyi, Luca Luceri, and Emilio Ferrara. 2025. "Auditing Political Exposure Bias: Algorithmic Amplification on Twitter/X During the 2024 U.S. Presidential Election." In *Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency (FAccT '25)*. https://doi.org/10.1145/3715275.3732159
+ 
+Zhu, Yixuan, Sotiris Siatras, and Lucia Siciliani. 2024. "Analyzing Political Stances on Twitter in the Lead-Up to the 2024 U.S. Election." arXiv:2412.02712. https://arxiv.org/html/2412.02712
+
